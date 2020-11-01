@@ -1,29 +1,99 @@
-# Ignore
-/public/wp-admin/
-/public/wp-content/plugins
-/public/wp-content/upgrade
-/public/wp-content/uploads
-/public/wp-content/index.php
-/public/wp-config.php
-/public/wp-config-sample.php
-/public/wp-cron.php
-/public/wp-includes/*
-/public/wp-activate.php
-/public/wp-blog-header.php
-/public/wp-comments-post.php
-/public/wp-links-opml.php
-/public/wp-load.php
-/public/wp-login.php
-/public/wp-mail.php
-/public/wp-settings.php
-/public/wp-signup.php
-/public/wp-trackback.php
-/public/xmlrpc.php
-/public/license.txt
-/public/index.php
-/public/.htaccess
-/public/readme.html
-untitledrecordings.sql
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+graphics/community/*
+dist
+*.sql
+!db-import.sql
+.vscode
 
-# Allow
-!/public/wp-content/themes
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Other file types
+*.ai
+*.xd
+*.eps
+*.psd
+*.pyc
+*.pyo
+*.pyc
+*~
+*.bak
+*.swp
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+db.php
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.DS_Store
+
+# WORDPRESS
+/*
+!wp-content/
+wp-content/*
+wp-content/plugins/*
+!wp-content/themes
+wp-content/themes/*
+!wp-content/themes/jamescliff/
+!wp-content/themes/jamescliff/dist
+wp-content/themes/jamescliff/dist/images
+node_modules/
+.*
+~*
+
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
+!README.md
+!CHANGELOG.md
+!composer.json

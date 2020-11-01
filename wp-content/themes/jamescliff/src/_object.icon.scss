@@ -1,0 +1,21 @@
+.o-button-primary {
+    display: block;
+    cursor: pointer;
+    font-family: $font-overpass;
+    font-weight: 700;
+    text-align: center;
+    border: 5px solid $color-prussian-blue;
+    padding: 1em 1.5em;
+    margin: 2em auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    &:hover {
+        background: $color-carolina-blue;
+        border: 5px solid $color-carolina-blue;
+        color: $color-white;
+    }
+    @media screen and (min-width: 768px) {
+        width: 320px;
+    }
+}

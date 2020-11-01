@@ -1,0 +1,31 @@
+
+/*------------------ FOOTER ------------------*/
+footer {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 48px;
+	background-color: $color-prussian-blue;
+	z-index: 99;
+	p {
+		color: $color-white !important;
+		font-size: 16px !important;
+		font-weight: 500;
+    	margin-top: 8px;
+	}
+}
+.fp-social-icons-footer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	font-size: 26px;
+	padding-top: 1rem;
+	i {
+		padding: 0 8px;
+		margin-bottom: 16px;
+		color: $color-white;
+	}
+}
+/*------------------ END FOOTER ------------------*/

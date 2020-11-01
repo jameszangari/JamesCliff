@@ -1,0 +1,75 @@
+/*------------------ FRONT PAGE ------------------*/
+.page-builder-front {
+	margin: 0 auto;
+	width: 70vw;
+	@media screen and (max-width: 768px) {
+		width: 90vw;
+	}
+}
+.fp-logo {
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+	margin: 84px auto 16px auto;
+	transition: transform .8s ease-in-out;
+    &:hover {
+        animation-name: rotate; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+.photography-hero-image {
+	animation-name: rotate; 
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.fp-name {
+	padding: 1rem 0 1em 0;
+	text-align: center;
+}
+.fp-sub-roles {
+	text-align: center;
+	font-weight: 700;
+	margin-top: 48px;
+	@media screen and (max-width: 414px) {
+		line-height: 54px;
+	}
+}
+.fp-role-1 {
+	color: #FFC600;
+}
+.fp-role-2 {
+	color: #1C617C;
+}
+.fp-role-1:hover, .fp-role-2:hover {
+	text-decoration: underline;
+}
+
+.fp-social-icons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	font-size: 30px;
+	padding: 3em 0;
+	@media screen and (max-width: 414px) {
+		display: grid;
+		grid-template-columns: 50% 50% 50%;
+		grid-gap: 24px 0;
+		justify-items: center;
+		width: 50%;
+	}
+	i {
+		padding: 0 16px;
+		margin: 0;
+		color: #000;
+	}
+}
+/*------------------ END FRONT PAGE ------------------*/

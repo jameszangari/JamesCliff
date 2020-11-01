@@ -1,0 +1,185 @@
+
+/*------------------ POST ------------------*/
+.page-builder-photography {
+	width: 90vw;	
+}
+
+.photography-hero {
+	background: linear-gradient(270deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 800% 800%;
+	padding: 2em 0;
+	margin-bottom: 4em;
+	max-height: 250px;
+
+    -webkit-animation: gradient 16s ease infinite;
+    animation: gradient 16s ease infinite;
+	@media screen and (max-width: 768px) {
+		max-height: 150px;
+	}
+	&-image {
+		display: block;
+		padding: 1rem 0;
+		margin: 0 auto;
+		height: 100px;
+		width: 100px;
+	}
+}
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.slick-slider {
+	&-title {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	&-container {
+    	margin: 0 auto;
+		margin: 36px 0 78px 0 !important;
+	}
+}
+.slick-container {
+	img {
+		transition: all .5s ease;
+		width: 100%;
+		height: auto;
+	}
+}
+.slick-current {
+	img {
+		scale: 1.075;
+	}
+	.slick-container {
+		.slick-caption {
+			margin-top: 36px !important;
+			@media screen and (max-width: 768px) {
+				margin-top: 28px !important;
+			}
+		}
+	}
+}
+.slick-dots li {
+	margin: 0 4px !important;
+}
+.slick-caption {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 18px !important;
+	transition: all .5s ease;
+	
+	&-specs {
+	padding: 18px;
+	margin: 0 !important;
+	font-size: 16px !important;
+	text-align: center;
+	@media screen and (max-width: 768px) {
+		padding: 12px 0;
+		font-size: 14px !important;
+	}
+	}
+}
+.camera-project-field {
+	padding-top: 2em;
+}
+@media screen and (max-width: 768px) {
+	.slick-dots li {
+		margin: 0 0px !important;
+	}
+}
+
+.c-contact-form {
+	width: 100%;
+	@media screen and (min-width: 768px) {
+		width: 75%;
+		margin: 36px auto auto auto;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 50%;
+		margin: 36px auto auto auto;
+	}
+	h2 {
+		margin: 48px 0 !important;
+		text-align: center;
+		font-size: 26px;
+	}
+}
+.wpcf7 {
+	input[type=text], textarea {   		
+		appearance: none;
+	}
+	&-form-control {
+		border: none;
+	}
+	&-text {
+		box-sizing: border-box;
+		padding: 8px;
+		margin-top: 6px;
+		font-family: $font-roboto;
+		font-size: 14px;
+		line-height: 24px;
+		border-radius: 5px;
+		border: 2px #555555 solid;
+		width: 100%;
+	}
+	&-textarea {
+		box-sizing: border-box;
+		border: 2px #555555 solid;
+		border-radius: 5px;
+		font-family: $font-roboto;
+		padding: 8px;
+		margin-top: 6px;
+		resize: none;
+		width: 100%;
+	}
+	p {
+		font-family: $font-roboto;
+		margin-top: 16px;
+	}
+	&-submit {
+		display: block;
+		font-family: 'Overpass', Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		text-align: center;
+		border: 5px solid $color-prussian-blue;
+		color: #000;
+		background: none;
+		padding: 1em 1.5em;
+		margin: 2em auto;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all .3s ease;
+		cursor: pointer;
+		width: 100%;
+		&:hover {
+			background-color: $color-carolina-blue;
+			border: 5px solid $color-carolina-blue;
+			color: $color-white;
+		}
+		@media screen and (min-width: 768px) {
+			width: 320px;
+		}
+	}
+	&-response-output {
+		border: none !important;
+		margin: 0 auto !important;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			width: 50%;
+		}
+	}
+	&-not-valid-tip {
+		color: #d44638;
+		font-size: 16px;
+		margin-top: 6px;
+	}
+}
+/*------------------ END POST ------------------*/

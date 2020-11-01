@@ -1,0 +1,98 @@
+
+/*------------------ DARK MODE ------------------*/
+.dark {
+	background: $color-black-fogra;
+	color: $color-white;
+}
+
+.dark {
+	.fp-social-icons i {
+		color: $color-white;
+	}
+	.r-social-icons i {
+		color: $color-white;
+	}
+	.page-builder-project a {
+		color: $color-white !important;
+	}
+	.page-builder__education-title {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.page-builder__experience-title {
+		color: $color-white !important;
+	}
+	.page-builder__experience-title-ur {
+		color: #e6e9ef !important;
+	}
+	.archive-item {
+		background-color: $color-white;
+	}
+	.page-numbers {
+		color: $color-white;
+	}
+	.wpcf7 {
+		&-text, &-textarea {
+			border: none;
+		}
+		&-submit {
+			color: $color-white;
+		}
+	}
+	pre {
+		background: #454545;
+		border: none;
+	}
+	.header_navigation_menu_mobile {
+		background-color: $color-prussian-blue;
+		transition: background-color 0.3s ease-in-out;
+	}
+}
+.fa-moon-desktop, .fa-moon-mobile {
+	color: #ffc480;
+	font-size: 16px;
+}
+.fa-moon-mobile {
+	padding-right: 0.5rem;
+}
+.fa-moon-desktop:hover {
+	color: #FFDB00;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+/* DARK MODE SWITCH */
+.dark-mode-swtich-mobile {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 4em;
+	width: max-content;
+	padding: 1rem;
+	transition: all 0.7s ease;
+	border: 2px solid $color-white;
+	p {
+		color: $color-white !important;
+	}
+	&:hover {
+		cursor: pointer;
+		background-color: $color-carolina-blue;
+		border: 2px solid $color-carolina-blue;
+	}
+}
+
+#dark-mode-button {
+	text-align: right;
+}
+p {
+	background: none !important;
+}
+main p {
+	transition: color 0.3s ease;
+}
+body {
+	transition: background 0.3s ease;
+}
+/*------------------ END DARK MODE ------------------*/
