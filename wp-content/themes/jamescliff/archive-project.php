@@ -6,26 +6,30 @@
 <?php while (have_posts()) : the_post(); ?>
   <div class="archive-grid">
     <div class="archive-item">
-    <a href="<?php the_permalink(); ?>">
-    <?php if ( has_post_thumbnail() ) {
-      the_post_thumbnail( 'large', array( 'class' => 'archive-thumbnail' ) );
-    } else { ?>
-      <img src="<?php bloginfo('template_directory'); ?>/dist/images/image_not_set.png" alt="<?php the_title(); ?>" class="archive-thumbnail"/>
-    <?php } ?>
-    </a>
-    <a href="<?php the_permalink(); ?>" class="archive-title-link">
-      <h2 class="archive-item--title u-heading-2"><?php the_title(); ?></h2>
-    </a>
-      <p class="archive-item--tag u-paragraph">
-      <?php
-        $posttags = get_the_tags();
-        if ($posttags) {
-          foreach($posttags as $tag) {
-            echo $tag->name . ' '; 
+      <div class="archive-item--column-top">
+        <a href="<?php the_permalink(); ?>">
+        <?php if ( has_post_thumbnail() ) {
+          the_post_thumbnail( 'large', array( 'class' => 'archive-thumbnail' ) );
+        } else { ?>
+          <img src="<?php bloginfo('template_directory'); ?>/dist/images/image_not_set.png" alt="<?php the_title(); ?>" class="archive-thumbnail"/>
+        <?php } ?>
+        </a>
+      </div>
+      <div class="archive-item--column-bottom">
+        <a href="<?php the_permalink(); ?>" class="archive-title-link">
+          <h2 class="archive-item--title u-heading-2"><?php the_title(); ?></h2>
+        </a>
+        <p class="archive-item--tag u-paragraph">
+        <?php
+          $posttags = get_the_tags();
+          if ($posttags) {
+            foreach($posttags as $tag) {
+              echo $tag->name . ' '; 
+            }
           }
-        }
-      ?>
-      </p>
+        ?>
+        </p>
+      </div>
     </div>
   </div>
     <?php endwhile; ?>

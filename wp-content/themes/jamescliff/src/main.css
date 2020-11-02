@@ -2039,6 +2039,15 @@ body {
 .archive-item {
   background-color: #f7f9f9;
   border-radius: 20px;
+}
+
+.archive-item--column-top {
+  height: 30%;
+  width: 100%;
+}
+
+.archive-item--column-bottom {
+  height: 70%;
   width: 100%;
 }
 

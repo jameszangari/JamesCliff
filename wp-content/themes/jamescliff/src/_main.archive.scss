@@ -23,7 +23,14 @@
 .archive-item {
 	background-color: rgb( 247, 249, 249 );
 	border-radius: 20px;
-	width: 100%;
+	&--column-top {
+		height: 30%;
+		width: 100%;
+	}
+	&--column-bottom {
+		height: 70%;
+		width: 100%;
+	}
 	&--title, &--tag {
 		color: #000 !important;
 	}
