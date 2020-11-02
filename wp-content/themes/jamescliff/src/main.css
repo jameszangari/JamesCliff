@@ -58,8 +58,8 @@ html, body {
 
 main {
   position: relative;
-  min-height: calc(100vh - 60px);
   width: 100%;
+  height: 100%;
 }
 
 .hidden {
@@ -108,6 +108,8 @@ h1, h2, h3, h4, p, a {
 .fa-envelope:hover {
   color: #d44638 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -115,6 +117,8 @@ h1, h2, h3, h4, p, a {
 .fa-github:hover {
   color: #6e5494 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -122,6 +126,8 @@ h1, h2, h3, h4, p, a {
 .fa-instagram:hover {
   color: #c13584 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -129,6 +135,8 @@ h1, h2, h3, h4, p, a {
 .fa-twitter:hover {
   color: #1da1f2 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -136,6 +144,8 @@ h1, h2, h3, h4, p, a {
 .fa-spotify:hover {
   color: #1DB954 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -143,6 +153,8 @@ h1, h2, h3, h4, p, a {
 .fa-twitch:hover {
   color: #6441A4 !important;
   scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -2058,6 +2070,8 @@ body {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   scale: 1.025;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -2398,6 +2412,8 @@ a.page-numbers:hover {
 
 .slick-current img {
   scale: 1.075;
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
 }
 
 .slick-current .slick-container .slick-caption {
