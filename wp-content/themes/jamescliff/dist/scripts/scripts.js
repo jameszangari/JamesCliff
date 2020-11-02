@@ -7,23 +7,32 @@ function darkMode() {
   if (localStorage.toggled != 'dark') {
     $('body, p').toggleClass('dark', true);
     localStorage.toggled = "dark";
-     
+
+    // Toggle moon/sun desktop
+    $('.dark-desktop').addClass('fa-sun');
+    $('.dark-desktop').removeClass('fa-moon');
+
+    // Toggle moon/sun mobile
+    $('#dark-mode-button-mobile--toggle').on('click', function(e) {
+      $(this).parent().find('i').addClass('fa-sun');
+      $(this).parent().find('i').removeClass('fa-moon');
+    });
+
   } else {
     $('body, p').toggleClass('dark', false);
     localStorage.toggled = "";
+
+    // Toggle moon/sun desktop
+    $('.dark-desktop').addClass('fa-moon');
+    $('.dark-desktop').removeClass('fa-sun');
+    
+    // Toggle moon/sun mobile
+    $('#dark-mode-button-mobile--toggle').on('click', function(e) {
+      $(this).parent().find('i').addClass('fa-moon');
+      $(this).parent().find('i').removeClass('fa-sun');
+    });
   }
 }
-// END DARK MODE
-
-// CHANGE ICON ON DARK MODE
-$('#dark-mode-button').on('click', function(e) {
-  $('.dark-desktop').toggleClass('fa-moon fa-sun');
-});
-
-$('#dark-mode-button-mobile--toggle').on('click', function(e) {
-  $(this).parent().find('i').toggleClass('fa-moon fa-sun');
-});
-// END ICON CHANGE
 
 // MOBILE NAVIGATION
 var hamburger = $('.hamburger');
