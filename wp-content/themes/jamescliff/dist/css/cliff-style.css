@@ -2283,12 +2283,19 @@ a.page-numbers:hover {
   opacity: 0.75;
 }
 
-.page-builder-posts img, .page-builder-posts video, .page-builder-posts iframe, .page-builder-page img, .page-builder-page video, .page-builder-page iframe, .page-builder-project img, .page-builder-project video, .page-builder-project iframe {
+.page-builder-posts img, .page-builder-posts video, .page-builder-page img, .page-builder-page video, .page-builder-project img, .page-builder-project video {
   margin: 0 auto;
   display: block;
   padding-top: 36px;
   max-width: 100%;
   height: auto;
+}
+
+.page-builder-posts iframe, .page-builder-page iframe, .page-builder-project iframe {
+  margin: 0 auto;
+  display: block;
+  padding-top: 36px;
+  max-width: 100%;
 }
 
 .page-builder-posts ul li, .page-builder-page ul li, .page-builder-project ul li {

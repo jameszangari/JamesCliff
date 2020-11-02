@@ -92,12 +92,18 @@
 		max-width: 1140px !important;
 		opacity: 0.75;
 	}
-	img, video, iframe {
+	img, video {
 		margin: 0 auto;
 		display: block;
 		padding-top: 36px;
 		max-width: 100%;
 		height: auto;
+	}
+	iframe {
+		margin: 0 auto;
+		display: block;
+		padding-top: 36px;
+		max-width: 100%;
 	}
 	ul li {
 		list-style-type: square;
