@@ -15,6 +15,16 @@ function darkMode() {
 }
 // END DARK MODE
 
+// CHANGE ICON ON DARK MODE
+$('#dark-mode-button').on('click', function(e) {
+  $('.dark-desktop').toggleClass('fa-moon fa-sun');
+});
+
+$('#dark-mode-button-mobile--toggle').on('click', function(e) {
+  $(this).parent().find('i').toggleClass('fa-moon fa-sun');
+});
+// END ICON CHANGE
+
 // MOBILE NAVIGATION
 var hamburger = $('.hamburger');
 $('.hamburger-box').on("click", function(e) {

@@ -384,16 +384,16 @@ footer p {
   transition: background-color 0.3s ease-in-out;
 }
 
-.fa-moon-desktop, .fa-moon-mobile {
+.fa-moon.dark-desktop, .fa-moon.dark-mobile, .fa-sun.dark-desktop, .fa-sun.dark-mobile {
   color: #ffc480;
   font-size: 16px;
 }
 
-.fa-moon-mobile {
+.fa-moon.dark-mobile, .fa-sun.dark-mobile {
   padding-right: 0.5rem;
 }
 
-.fa-moon-desktop:hover {
+.fa-moon.dark-desktop:hover, .fa-sun.dark-desktop:hover {
   color: #FFDB00;
   cursor: pointer;
   -webkit-transition: color 0.3s ease;

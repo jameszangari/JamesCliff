@@ -18,7 +18,7 @@
     </a>   
         <div class="header_navigation_menu">
             <?php wp_nav_menu(['theme_location' => 'primary_menu', 'container' => false]); ?>
-            <i class="fas fa-moon fa-moon-desktop" id="dark-mode-button" onclick="darkMode()"></i>
+            <i class="fas fa-moon dark-desktop" id="dark-mode-button" onclick="darkMode()"></i>
         </div>
     <button class="hamburger hamburger--3dy" type="button">
         <span class="hamburger-box">
@@ -29,9 +29,11 @@
     </div>
     <div class="header_navigation_menu_mobile">
         <?php wp_nav_menu(['theme_location' => 'primary_menu', 'container' => false]); ?>
+        <span id="dark-mode-button-mobile--toggle">
         <div class="dark-mode-swtich-mobile" onclick="darkMode()">
-            <i class="fas fa-moon fa-moon-mobile"></i>
+            <i class="fas fa-moon dark-mobile" id="dark-mode-button-mobile"></i>
             <p class="u-paragraph">Dark Mode</p>
         </div>
+        </span>
     </div>
 </header>

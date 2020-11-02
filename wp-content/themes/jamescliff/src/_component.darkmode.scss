@@ -3,9 +3,6 @@
 .dark {
 	background: $color-black-fogra;
 	color: $color-white;
-}
-
-.dark {
 	.fp-social-icons i {
 		color: $color-white;
 	}
@@ -49,17 +46,21 @@
 		transition: background-color 0.3s ease-in-out;
 	}
 }
-.fa-moon-desktop, .fa-moon-mobile {
-	color: #ffc480;
-	font-size: 16px;
-}
-.fa-moon-mobile {
-	padding-right: 0.5rem;
-}
-.fa-moon-desktop:hover {
-	color: #FFDB00;
-	cursor: pointer;
-	transition: color 0.3s ease;
+.fa-moon, .fa-sun {
+	&.dark-desktop, &.dark-mobile {
+		color: #ffc480;
+		font-size: 16px;
+	}
+	&.dark-mobile {
+		padding-right: 0.5rem;
+	}
+	&.dark-desktop {
+		&:hover {
+			color: #FFDB00;
+			cursor: pointer;
+			transition: color 0.3s ease;
+		}
+	}
 }
 /* DARK MODE SWITCH */
 .dark-mode-swtich-mobile {
