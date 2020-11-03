@@ -25,11 +25,11 @@
 	border-radius: 20px;
 	&--column-top {
 		height: 30%;
-		width: 100%;
+		max-width: 100%;
 	}
 	&--column-bottom {
 		height: 70%;
-		width: 100%;
+		max-width: 100%;
 	}
 	&--title, &--tag {
 		color: #000 !important;
